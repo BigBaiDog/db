@@ -17,14 +17,10 @@ app.get('/', async (c) => {
       password: c.env.HYPERDRIVE.password,
       database: c.env.HYPERDRIVE.database,
       port: c.env.HYPERDRIVE.port,
-
-    // Required to enable mysql2 compatibility for Workers
     disableEval: true,
   });
-  // Create the Drizzle client with the mysql2 driver connection
   const db = drizzle(connection);
-
-  // Sample query to get all users
+  console.log(db);
   const allUsers = await db.select().from(users);
 
   return c.json(allUsers)

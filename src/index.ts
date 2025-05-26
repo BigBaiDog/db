@@ -7,11 +7,11 @@ const app = new Hono()
 
 app.get('/', async (c) => {
   const connection = await createConnection({
-    host: 'sql.freedb.tech',
-    user: 'freedb_yuan01',
-    password: 'Mjva%QZ!JR$5sEJ',
-    database: 'freedb_freedbmysql01',
-    port: 3306,
+      host: env.HYPERDRIVE.host,
+      user: env.HYPERDRIVE.user,
+      password: env.HYPERDRIVE.password,
+      database: env.HYPERDRIVE.database,
+      port: env.HYPERDRIVE.port,
 
     // Required to enable mysql2 compatibility for Workers
     disableEval: true,

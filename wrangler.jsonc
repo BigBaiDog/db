@@ -13,9 +13,9 @@
       "localConnectionString": "mysql://freedb_yuan01:Mjva%QZ!JR$5sEJ@sql.freedb.tech:3306/freedb_freedbmysql01"
     }
   ],
-  // "vars": {
-  //   "MY_VAR": "my-variable"
-  // },
+  "vars": {
+    "MY_VAR": "my-variable"
+  },
   // "kv_namespaces": [
   //   {
   //     "binding": "MY_KV_NAMESPACE",

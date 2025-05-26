@@ -3,6 +3,10 @@ import { drizzle } from "drizzle-orm/mysql2";
 import { createConnection } from "mysql2";
 import { users } from "./schema";
 
+
+export interface Env {
+  HYPERDRIVE: Hyperdrive;
+  }
 const app = new Hono()
 
 app.get('/', async (c) => {

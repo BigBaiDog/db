@@ -7,7 +7,8 @@ import { users } from "./schema";
   HYPERDRIVE: Hyperdrive;
 }
 
-const app = new Hono({ Bindings: Bindings })
+
+const app = new Hono<{ Bindings: Bindings }>()
 
 app.get('/', async (c) => {
   const connection = await createConnection({

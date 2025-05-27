@@ -9,7 +9,7 @@
   "hyperdrive": [
     {
       "binding": "HYPERDRIVE",
-      "id": "2ce47e615c034b1fbd8a37c3aef7d30d",
+      "id": "92ce779b7a714563bdb17b6e96018057",
       "localConnectionString": "mysql://freedb_yuan01:Mjva%QZ!JR$5sEJ@sql.freedb.tech:3306/freedb_freedbmysql01"
     }
   ],
